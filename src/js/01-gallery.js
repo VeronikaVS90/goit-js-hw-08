@@ -9,9 +9,9 @@ const gallery = document.querySelector('.gallery');
 
 const galleryItemsLight = galleryItems
     .map(({ preview, original, description }) => {
-        return `<li><a class="gallery__item" href="${original}">
+        return `<div class="gallery__item"><a class="gallery__item" href="${original}">
   <img class="gallery__image" src="${preview}" alt="${description}" />
-</a></li>`;
+</a></div>`;
     })
     .join('');
 
